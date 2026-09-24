@@ -32,6 +32,8 @@
         <a href="#growth-plans">Growth Plans</a>
         <a href="#special-offer">Special Offer</a>
         <a href="#website-services">Website Services</a>
+        <a href="#custom-order">Custom Calculator</a>
+        <a href="#other-platforms">YouTube & Facebook</a>
         <a href="#why-us">Why GrowthKosh</a>
         <a href="#contact">Contact</a>
       </div>
@@ -242,15 +244,66 @@
           </div>
         </div>
 
-        <div class="custom-order reveal">
-          <div class="custom-order-copy">
-            <p class="kicker">Custom Orders</p>
-            <h3>Need something different?</h3>
-            <p>Custom requirements are accepted for businesses and creators who need different quantities or campaign structures.</p>
+        <div class="custom-order custom-calculator reveal" id="custom-order">
+          <div class="calculator-intro">
+            <p class="kicker light-kicker">Custom Order Calculator</p>
+            <h3>Build your own views package.</h3>
+            <p>Enter the number of reels and required views per reel. The calculator uses the custom-order rate of <strong>₹1,600 per 100K views</strong> to provide an instant estimated total.</p>
+            <div class="rate-pill"><span>Custom Rate</span><strong>₹1,600 / 100K views</strong></div>
           </div>
-          <div class="custom-order-price"><span>100K Views</span><strong>₹1,600</strong></div>
-          <a class="btn btn-light" target="_blank" rel="noopener"
-            href="https://wa.me/919337963411?text=Hi%20GrowthKosh%2C%20I%20need%20a%20custom%20social%20media%20growth%20package.">Get Custom Quote</a>
+
+          <form class="calculator-form" id="custom-calculator-form" novalidate>
+            <div class="calc-fields">
+              <label class="calc-field">
+                <span>Number of Reels</span>
+                <input id="calc-reels" name="reels" type="number" min="1" max="500" step="1" value="1" inputmode="numeric" required />
+                <small>Minimum 1 reel</small>
+              </label>
+
+              <label class="calc-field">
+                <span>Views Required Per Reel</span>
+                <div class="input-suffix">
+                  <input id="calc-views" name="views" type="number" min="10000" max="10000000" step="10000" value="100000" inputmode="numeric" required />
+                  <b>views</b>
+                </div>
+                <small>Enter 10,000 views or more</small>
+              </label>
+            </div>
+
+            <div class="quick-view-options" aria-label="Quick view amounts">
+              <button type="button" data-views="10000">10K</button>
+              <button type="button" data-views="50000">50K</button>
+              <button type="button" data-views="100000" class="selected">100K</button>
+              <button type="button" data-views="250000">250K</button>
+              <button type="button" data-views="500000">500K</button>
+            </div>
+
+            <div class="estimate-box" aria-live="polite">
+              <div>
+                <span>Total Views</span>
+                <strong id="calc-total-views">100,000</strong>
+              </div>
+              <div class="estimate-total">
+                <span>Estimated Total Cost</span>
+                <strong id="calc-total-cost">₹1,600</strong>
+              </div>
+            </div>
+
+            <p class="calc-note" id="calc-note">Estimate based on ₹1,600 per 100,000 views. Final availability and order details are confirmed by the GrowthKosh team.</p>
+
+            <div class="calc-contact-grid">
+              <label class="calc-field">
+                <span>Your Name <em>Optional</em></span>
+                <input id="calc-name" name="name" type="text" maxlength="80" placeholder="Enter your name" />
+              </label>
+              <label class="calc-field">
+                <span>Business / Page Name <em>Optional</em></span>
+                <input id="calc-business" name="business" type="text" maxlength="100" placeholder="Your brand or page name" />
+              </label>
+            </div>
+
+            <button class="btn btn-light calc-submit" type="submit">Send Estimate on WhatsApp</button>
+          </form>
         </div>
       </div>
     </section>
@@ -323,6 +376,32 @@
         <div><span>02</span><h3>Lead Generation</h3><p>Contact, enquiry and WhatsApp actions placed where customers need them.</p></div>
         <div><span>03</span><h3>Business Showcase</h3><p>Services, products, social links and business details organized professionally.</p></div>
         <div><span>04</span><h3>Launch Support</h3><p>Domain and hosting guidance plus deployment support for a smooth go-live.</p></div>
+      </div>
+    </section>
+
+
+    <section class="section multi-platform-section" id="other-platforms">
+      <div class="shell multi-platform-card reveal">
+        <div class="platform-copy">
+          <p class="kicker">More Platforms</p>
+          <h2>We also provide <span>YouTube</span> & <span>Facebook</span> services.</h2>
+          <p>Need growth or promotional support beyond Instagram? GrowthKosh also provides services for YouTube and Facebook. Package details depend on your exact requirement, so connect with our team for available options and pricing.</p>
+          <a class="btn btn-primary" target="_blank" rel="noopener"
+             href="https://wa.me/919337963411?text=Hi%20GrowthKosh%2C%20I%20want%20to%20know%20more%20about%20your%20YouTube%20and%20Facebook%20services.">
+             Know More — Connect With Our Team
+          </a>
+        </div>
+        <div class="platform-visual" aria-label="YouTube and Facebook services">
+          <div class="platform-card youtube-card">
+            <div class="platform-icon">▶</div>
+            <div><strong>YouTube</strong><span>Growth & promotional services</span></div>
+          </div>
+          <div class="platform-card facebook-card">
+            <div class="platform-icon">f</div>
+            <div><strong>Facebook</strong><span>Growth & promotional services</span></div>
+          </div>
+          <p>Contact our team for current packages, availability and custom requirements.</p>
+        </div>
       </div>
     </section>
 
